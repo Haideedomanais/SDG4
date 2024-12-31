@@ -55,12 +55,6 @@
         .section h2 {
             color: #e5243b;
         }
-        .resource-item {
-            margin: 0.5rem 0;
-            padding: 0.5rem;
-            background-color: #f9f3f3;
-            border-left: 4px solid #e5243b;
-        }
         #sdg4 {
             background-color: #f9f3f3;
             padding: 1.5rem;
@@ -90,6 +84,57 @@
             height: auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .global-goals-overview {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #333;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .target-image {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+        }
+        #learning-materials {
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .learning-category {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .technical {
+            background-color: #e1f5fe;
+        }
+        .vocational {
+            background-color: #fff9c4;
+        }
+        .industry-specific {
+            background-color: #c8e6c9;
+        }
+        .learning-item {
+            display: inline-block;
+            width: 30%;
+            margin: 0.5rem;
+            padding: 1rem;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .learning-item a {
+            text-decoration: none;
+            color: #c5192d;
+        }
+        .learning-item a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -99,20 +144,17 @@
     </header>
 
     <nav>
-        <a href="#resources">Resources</a>
         <a href="#sdg4">SDG 4</a>
         <a href="#help">Help</a>
+        <a href="#learning-materials">Learning Materials</a>
     </nav>
 
     <div class="container">
         <section class="global-goals-image">
-            <h2>The Global Goals</h2>
             <img src="the-global-goals-grid-color.png" alt="The Global Goals grid">
-        </section>
-
-        <section class="global-goals-image">
-            <h2>Target 4.3</h2>
-            <img src="MC_Target_4.3.png" alt="Target 4.3 - Equal Access to Affordable Education">
+            <div class="global-goals-overview">
+                <p>The Global Goals, officially known as the Sustainable Development Goals (SDGs), were adopted by all United Nations Member States in 2015. These 17 goals provide a shared blueprint for peace and prosperity for people and the planet, now and into the future. They address global challenges including poverty, inequality, climate change, environmental degradation, and justice. The goals are interconnected, recognizing that actions in one area will affect outcomes in others.</p>
+            </div>
         </section>
 
         <section id="sdg4" class="section">
@@ -127,6 +169,9 @@
                 <li>Eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable.</li>
                 <li>Provide universal access to early childhood development, care, and pre-primary education so that all children are ready for primary education.</li>
             </ul>
+            <h3>Target 4.3:</h3>
+            <p>Target 4.3 focuses on ensuring equal access to affordable technical, vocational, and higher education. This goal emphasizes breaking down barriers to education for all individuals, regardless of socioeconomic status.</p>
+            <img class="target-image" src="MC_Target_4.3.png" alt="Target 4.3 - Equal Access to Affordable Education">
             <h3>Challenges:</h3>
             <p>Lack of resources, inadequate teacher training, and disparities in access to education based on gender, socioeconomic status, or geography pose significant challenges to achieving SDG 4.</p>
             <h3>Progress:</h3>
@@ -134,11 +179,27 @@
             <p>Learn more about SDG 4 on the <a href="https://www.globalgoals.org/goals/4-quality-education/" target="_blank">Global Goals' official page</a>.</p>
         </section>
 
-        <section id="resources" class="section">
-            <h2>Resources</h2>
-            <p>Browse or upload educational materials to enhance learning.</p>
-            <div class="resource-item">Sample Resource 1: <a href="#">Download</a></div>
-            <div class="resource-item">Sample Resource 2: <a href="#">Download</a></div>
+        <section id="learning-materials">
+            <h2>Download Learning Materials</h2>
+            <p>Explore categorized resources to support technical, vocational, and industry-based learning:</p>
+            <div class="learning-category technical">
+                <h3>Technical Jobs</h3>
+                <div class="learning-item"><a href="https://www.griet.ac.in/nodes/BEEE.pdf" target="_blank">Electrical Engineering Basics</a></div>
+                <div class="learning-item"><a href="https://www.pearsonhighered.com/assets/samplechapter/0/3/2/1/0321537114.pdf" target="_blank">Introduction to Programming</a></div>
+                <div class="learning-item"><a href="https://web.mae.ufl.edu/designlab/DFMA%20Tips/Fundamental_Design_Principles_KCraig.pdf" target="_blank">Mechanical Design Principles</a></div>
+            </div>
+            <div class="learning-category vocational">
+                <h3>Vocational Training</h3>
+                <div class="learning-item"><a href="https://www.kauai.hawaii.edu/sites/www.kauai.hawaii.edu/files/pdf/programs/culinary/culinary-handbook.pdf" target="_blank">Culinary Arts Guide</a></div>
+                <div class="learning-item"><a href="https://www.survivorlibrary.com/library/handbook_in_woodwork_and_carpentry_for_teachers_and_normal_schools_1911.pdf" target="_blank">Carpentry and Woodworking</a></div>
+                <div class="learning-item"><a href="https://transportation.wv.gov/highways/training/TrainingDocuments/Crawfords_Auto_Repair_Guide.pdf" target="_blank">Automotive Repair Basics</a></div>
+            </div>
+            <div class="learning-category industry-specific">
+                <h3>Industry-Specific Materials</h3>
+                <div class="learning-item><a href="https://hcpf.colorado.gov/sites/hcpf/files/DRAFT%20-%20Health%20Training%20Manual.pdf" target="_blank">Healthcare Training Manuals</a></div>
+                <div class="learning-item"><a href="https://ehs.umich.edu/wp-content/uploads/2016/08/ContractorSafetyRequirements1-3-12.pdf" target="_blank">Construction Safety Standards</a></div>
+                <div class="learning-item"><a href="https://baou.edu.in/assets/pdf/BBAATR_101_slm.pdf">Hospitality Management Tips</a></div>
+            </div>
         </section>
 
         <section id="help" class="section">
@@ -153,3 +214,4 @@
     </footer>
 </body>
 </html>
+
